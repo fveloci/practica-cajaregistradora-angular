@@ -1,0 +1,13 @@
+.header{
+  background-color: gainsboro;
+  border-radius: 10px 10px 10px 10px;
+  padding: 5px;
+}
+.header h5{
+  padding: 5px;
+}
+.products-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+

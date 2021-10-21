@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3 class="m-5">Caja</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h5>Total: ${{calculateTotal()}}</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <ul class="list-group">
+        <app-cash-register-item *ngFor="let product of list; let i = index" [product]="product" (deleteProduct)="onClickDelete(i)"></app-cash-register-item>
+      </ul>
+    </div>
+  </div>
+</div>
+
